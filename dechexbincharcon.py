@@ -13,6 +13,7 @@ def hexcon(num):
 		
 	h16s = str(h16); h1s = str(h1)
 	h = h16s + h1s + hexLetter
+	
 	return h
 	
 def bincon(num):
@@ -34,15 +35,28 @@ def bincon(num):
 			
 	return binString
 	
-char = chr(thenumber)
-print(char)
+def charcon(num):
+	charString = ""
+	
+	if num > 31 and num < 128:
+		charString = chr(num)
+		if num == 32:
+			charString = "SPACE"
+		if num == 127:
+			charString = "DEL"
+			
+		charString = ", " + charString
+	
+	return charString
 	
 def main():
 	dec = str(thenumber)
 	hex = hexcon(thenumber)
 	bin = bincon(thenumber)
+	char = charcon(thenumber)
 	
-	print(dec, hex, bin)
+	print("(" + dec + ", " + hex + ", " + bin + char + ")")
 	
+print("(DEC, HEX, BIN, CHAR)")
 main()
 
