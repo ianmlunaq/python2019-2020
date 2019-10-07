@@ -1,6 +1,6 @@
 # dechexbincharcon.py iml
 
-thenumber = int(input("Input a whole, positive number: "))
+#thenumber = int(input("Input a whole, positive number: "))
 
 def hexcon(num):
 	h16s = ""; h1s = ""; hexLetter = ""
@@ -50,12 +50,14 @@ def charcon(num):
 	return charString
 	
 def main():
-	dec = str(thenumber)
-	hex = hexcon(thenumber)
-	bin = bincon(thenumber)
-	char = charcon(thenumber)
+	for thenumber in range(0, 128):
+		dec = str(thenumber)
+		hex = hexcon(thenumber)
+		bin = bincon(thenumber)
+		char = charcon(thenumber)
+		
+		print("(" + dec + ", " + hex + ", " + bin + char + ")")
 	
-	print("(" + dec + ", " + hex + ", " + bin + char + ")")
 	
 print("(DEC, HEX, BIN, CHAR)")
 main()
