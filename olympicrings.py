@@ -6,7 +6,7 @@ def blackring(t):
 	t.down()
 	t.color("#000000")
 	t.width(12)
-	for i in range (1,75):
+	for i in range (1,50):
 		t.fd(10)
 		t.lt(9)
 		print(str(t.pos()))
@@ -18,7 +18,7 @@ def bluering(t):
 	t.down()
 	t.color("#1e90ff")
 	t.width(12)
-	for i in range (1,90):
+	for i in range (1,50):
 		t.fd(10)
 		t.lt(9)
 		print(str(t.pos()))
@@ -30,7 +30,7 @@ def redring(t):
 	t.down()
 	t.color("#e8434c")
 	t.width(12)
-	for i in range (1,90):
+	for i in range (1,50):
 		t.fd(10)
 		t.lt(9)
 		print(str(t.pos()))
@@ -42,7 +42,7 @@ def yellowring(t):
 	t.down()
 	t.color("#ffd700")
 	t.width(12)
-	for i in range (1,90):
+	for i in range (1,50):
 		t.fd(10)
 		t.lt(9)
 		print(str(t.pos()))
@@ -54,7 +54,7 @@ def greenring(t):
 	t.down()
 	t.color("#2e8b57")
 	t.width(12)
-	for i in range (1,90):
+	for i in range (1,50):
 		t.fd(10)
 		t.lt(9)
 		print(str(t.pos()))
