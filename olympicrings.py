@@ -121,13 +121,10 @@ def circle(t):
 	t.color("#ffffff")
 
 
-def main():
-	x = -30; y = 0
-	w = turtle.Screen()
-	w.setup(1000, 700)
-	w.clear()
-	w.bgcolor("#ffffff")
-	t = turtle.Turtle()
+def rings(t):
+	t.shape('classic')
+	#t.hideturtle()
+	t.penup()
 	t.shape('classic')
 	#t.hideturtle()
 	t.penup()
@@ -152,7 +149,17 @@ def main():
 	t.color('#ff00ff')
 	t.up()
 	redringfill(t)
+	t.hideturtle()
 
+
+def main():
+	x = -30; y = 0
+	w = turtle.Screen()
+	w.setup(1000, 700)
+	w.clear()
+	w.bgcolor("#ffffff")
+	t = turtle.Turtle()
+	rings(t)
 	w.exitonclick()
 
 
