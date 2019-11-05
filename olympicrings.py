@@ -132,7 +132,7 @@ def main():
 	#t.hideturtle()
 	t.penup()
 	t.goto(0,0)
-	t.speed(10)
+	t.speed(0)
 	t.color("#000000")
 	blackring(t)
 	t.up()
