@@ -1,6 +1,7 @@
 # dechexbincharcon.py iml
 
 #thenumber = int(input("Input a whole, positive number: "))
+#num = int(input("Input a whole, positive number: "))
 
 def hexcon(num):
 	h16s = ""; h1s = ""; hexLetter = ""
