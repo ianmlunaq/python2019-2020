@@ -1,3 +1,7 @@
+"""
+NOT MY CODE
+"""
+
 import random
 
 # -------------Setting the board, players and hiding battleships-------------
