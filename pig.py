@@ -5,17 +5,56 @@ import random
 p1PointsTemp = 0
 p1PointsPerm = 0
 
-while p1PointsPerm < 100:
-    roll = random.randint(1,6)
-    print(roll)
-    decision = input('')
-    if roll == 1:
-        p1PointsPerm += 0
-    else:
-        p1PointsPerm += roll
+p2PointsTemp = 0
+p2PointsPerm = 0
 
-    print('total: ' + str(p1PointsPerm))
-    decision = input('')
+win = 0
+pc = 0
 
+print()
 
-print(str(p1PointsPerm))
+while win == 0:
+    while pc == 0:
+        pc = 0
+        roll = random.randint(1,6)
+        print('P1 ' + str(roll))
+
+        if roll == 1:
+            p1PointsTemp = 0
+            pc = 1
+            print('You got a 1!')
+            print()
+            confirmation = input()
+            break;
+        else:
+            p1PointsTemp += roll
+
+        print('TempPoints: ' + str(p1PointsTemp))
+        print('PermPoints: ' + str(p1PointsPerm))
+        decision = input('Do you want to continue or hold? ')
+        print()
+        if decision == 'h':
+            p1PointsPerm += p1PointsTemp
+            p1PointsTemp = 0
+            pc = 1
+        if p1PointsPerm >= 100:
+            win += 1
+
+    while pc == 1:
+        pc = 1
+        roll = random.randint(1,6)
+        print('PC ' + str(roll))
+
+        if roll == 1:
+            p2PointsTemp = 0
+            pc = 0
+            print('You got a 1!')
+            print()
+            confirmation = input()
+            break;
+        else:
+            p2PointsTemp += roll
+
+        print('TempPoints: ' + str(p2PointsTemp))
+        print('PermPoints: ' + str(p2PointsPerm))
+        confirmation = input()
