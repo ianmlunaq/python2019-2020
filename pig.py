@@ -33,9 +33,8 @@ while win == 0:
         print('PermPoints: ' + str(p1PointsPerm))
         decision = input('Do you want to continue or hold? ')
         print()
-        print(decision)
-        print()
-        if decision != 'h':
+        """
+        while decision != 'h' or decision != 'hold' or decision != 'c':
             if decision == 'help':
                 print('Pig is a simple dice game first described in print by John Scarne in 1945. As with many games of folk origin, Pig is played with many rule variations.')
                 print('In this version of Pig, each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold": ')
@@ -48,7 +47,7 @@ while win == 0:
             print('If you need help type \"help\".')
             print()
             decision = input('Do you want to continue or hold? ')
-
+        """
         if decision == 'h' or 'hold':
             p1PointsPerm += p1PointsTemp
             p1PointsTemp = 0
