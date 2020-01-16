@@ -48,7 +48,7 @@ while win == 0:
             print()
             decision = input('Do you want to continue or hold? ')
         """
-        if decision == 'h' or 'hold':
+        if decision == 'h':
             p1PointsPerm += p1PointsTemp
             p1PointsTemp = 0
             pc = 1
