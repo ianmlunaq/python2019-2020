@@ -1,3 +1,11 @@
+# Set the player name (7 chars) for Minecraft PI Edition
+# Written by Richard Garsthagen - richard@coderdojo-zoetermeer.nl
+#
+# Use at own risk. Please make a backup of minecraft-pi first!
+#
+# Close Minecraft PI before using!
+#
+
 namestart= 1026250
 
 fh = open("/opt/minecraft-pi/minecraft-pi", "r+b")
