@@ -1,5 +1,5 @@
 # pig.py | iml
-#s
+#str
 
 import random
 
