@@ -1,2 +1,2 @@
-x, y = input("Enter two values: ").split()
+x, y = input("Enter three values: ").split()
 print(x, y)
