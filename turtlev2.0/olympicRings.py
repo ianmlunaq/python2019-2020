@@ -161,11 +161,13 @@ def ringsv2():
 		w.bgcolor("#ffffff")
 		t = turtle.Turtle()
 
-		t.shape('classic')
+		turtle.tracer(0, 0)
+		#t.shape('classic')
 		#t.hideturtle()
+		#t.speed(0)
 		t.penup()
 		t.goto(0,0)
-		t.speed(0)
+		#t.speed(0)
 		t.color("#000000")
 		blackring(t)
 		t.up()
@@ -185,10 +187,13 @@ def ringsv2():
 		t.color('#ff00ff')
 		t.up()
 		redringfill(t)
-		t.hideturtle()
+		#t.hideturtle()
+		turtle.update()
 		w.exitonclick()
 	finally:
 		turtle.Terminator()
+
+	
 
 
 def main():
